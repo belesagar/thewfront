@@ -16,7 +16,7 @@ export class Constant implements OnInit {
     
   }
 
-  ngOnInit() { 
+  ngOnInit() {  
   }
 
 }
