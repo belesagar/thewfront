@@ -1,0 +1,72 @@
+
+          <div class="block-header">
+              <h2>Payment Details - {{orderdetails.order_unique_id}} </h2>
+          </div>
+          <!-- Blockquotes -->
+          <div class="row clearfix" >
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>
+                              Confirm Order
+                          </h2>
+                          
+                      </div>
+                      <div class="body">
+                          <blockquote class="m-b-25">
+                              <p>Order Amount<span style="float: right">&#x20B9;{{orderdetails.amount_of_order}}</span></p>
+                          </blockquote>
+                          <blockquote class="m-b-25">
+                              <p>Remaning Amount<span style="float: right">+&#x20B9;0</span></p>
+                          </blockquote>
+                          <blockquote class="m-b-25" *ngIf="wallet_amount">
+                              <p>Wallet Amount<span style="float: right">-&#x20B9;{{orderdetails.total_amount}}</span></p>
+                          </blockquote>
+
+                          <div>
+                            <button type="button" class="btn btn-success waves-effect" *ngIf="apply_promocode_button" (click)="apply_promocode()">Have a promocode</button>
+
+                            <form class="m-form m-form--fit m-form--label-align-right" *ngIf="apply_promocode_box" novalidate [formGroup]='apply_promocode_form' (ngSubmit) = "onApply()">
+                              <div class="m-portlet__body">
+                                  
+                                <div class="form-group form-float form-group-lg">
+                                  <div class="form-line">
+                                    <input type="text" class="form-control" formControlName='promocode' [(ngModel)]="promocode_value" placeholder="Apply Promocode" oninput="if(value.length>15)value=value.slice(0,15)">
+                                    
+                                  </div>
+                                  <div *ngIf="promocode.invalid && (promocode.dirty || promocode.touched)">
+                                        <label class="error" *ngIf="promocode.errors.required">Please enter Pramocode</label>
+                                        <label class="error" *ngIf="promocode.errors.minlength">Please enter at least 3 characters.</label>
+                                        <label class="error" *ngIf="promocode.errors.pattern">Please enter valid name.</label>
+                                 </div>
+                                </div>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit"> 
+                                        Apply
+                                    </button>
+                                </span>
+                              </div>
+                              
+                            </form>
+                            <blockquote *ngIf="offer_box">
+                                <p>{{offerData.offer_code}}<span style="float: right">-&#x20B9;{{offer_discount}}</span></p>
+                                <footer><cite title="Source Title" style="color:green;">{{offerData.details}}</cite></footer>
+                                <div class="demo-google-material-icon" (click)="cancleOffer()"> <i class="material-icons">cancel</i></div>
+                            </blockquote>
+                          </div>
+                          <br>
+                          <blockquote class="m-b-25">
+                              <p><b>Total Bill</b><span style="float: right"><b>&#x20B9;{{total_bill}}</b></span></p>
+                          </blockquote>
+
+                          <div class="footer">
+                              <button type="button" class="btn btn-info btn-block btn-lg waves-effect" (click)="proceed_to_pay()">Pay Rs. {{total_bill}}</button>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- #END# Blockquotes -->
+          
+     
