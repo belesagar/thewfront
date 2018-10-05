@@ -1,0 +1,55 @@
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="body">
+            <div class="row">
+                <div class="col-sm-6 col-md-12">
+                    <div class="thumbnail">
+                        <img src="assets/images/payment/success.png">
+                        <div class="caption">
+                            <h3 style="text-align: center">Rs. {{transactionData.total_amount}}</h3>
+                            <h3 style="text-align: center">Payment Successful</h3>
+                            <hr>
+                            <div class="header">
+                                <h4>
+                                    Transaction Details
+                                </h4>
+                            </div>
+                            <div class="body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Order ID
+                                        <span class="badge bg-pink">{{transactionData.order_unique_id}}</span>
+                                    </li>
+                                    <li class="list-group-item">Transaction ID
+                                        <span class="badge bg-cyan">{{transactionData.temp_transaction_unique_id}}</span>
+                                    </li>
+                                    <li class="list-group-item">Order Amount
+                                        <span class="badge bg-teal">Rs. {{transactionData.amount_of_order}}</span>
+                                    </li>
+                                    <li class="list-group-item" *ngIf="offerShow">Offer Voucher
+                                        <span class="badge bg-orange">{{transactionData.offer_id}}</span>
+                                    </li>
+                                    <li class="list-group-item" *ngIf="offerShow">Offer Amount
+                                        <span class="badge bg-orange">{{transactionData.offer_amount}}</span>
+                                    </li>
+                                    <li class="list-group-item" *ngIf="walletShow">Wallet Amount
+                                        <span class="badge bg-orange">{{transactionData.wallet_amount}}</span>
+                                    </li>
+                                    <li class="list-group-item">Total Bill
+                                        <span class="badge bg-purple">Rs. {{transactionData.total_amount}}</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <p>
+                                <a routerLink="/dashboard" class="btn btn-primary waves-effect">Done</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,80 @@
+
+            <!-- <div class="block-header">
+                <h2>Order Details({{orderdetails.order_unique_id}})</h2>
+                <button type="button" class="btn btn-danger waves-effect" (click)="cancleOrder()" *ngIf="cancleOrderShow">Cancle Order</button>
+
+            </div> -->
+            <!-- Basic Card -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-4 col-sm-6 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                Order ID -> {{orderdetails.order_unique_id}} 
+                                  
+                            </h2>
+
+                            <small>Service Name - {{orderdetails.type}}</small>
+                            <br>
+                            <small>Weight of order - {{orderdetails.weight_of_order}} Kg</small>
+                            <br>
+                            <small>Pick up slot - {{orderdetails.pick_up_slot}}</small>
+                            <br>
+                            <small>Status - {{orderdetails.status}}</small>
+
+                            <!-- <div class="font-12">
+                                Service Name - {{orderdetails.type}}
+                                <br>
+                                Weight of order - {{orderdetails.weight_of_order}} Kg
+                                <br>
+                                Pick up slot - {{orderdetails.pick_up_slot}}
+                                <br>
+                                Status - {{orderdetails.status}}
+                            </div> -->
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-4 col-sm-6 col-xs-12" style="display: none;">
+                    <div class="card">
+                        <div class="header">
+                            <div class="irs-demo" style="display: none;">
+                                <b>Set min value, max value and start point</b>
+                                <input type="text" id="range_02" value="" />
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-lg-12 col-md-4 col-sm-6 col-xs-12" *ngIf="paymentShow">
+                    <div class="card">
+                        <div class="header">
+                            <div>
+                                <div class="header">
+                                    <h2>
+                                        Payment Summary
+                                    </h2>
+                                </div>
+                                <div class="body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Order Amount <span class="badge bg-pink">&#x20B9;{{orderdetails.amount_of_order}}</span></li>
+                                        <!-- <li class="list-group-item">Dapibus ac facilisis in <span class="badge bg-cyan">99 read</span></li>
+                                        <li class="list-group-item">Morbi leo risus <span class="badge bg-teal">99+</span></li>
+                                        <li class="list-group-item">Porta ac consectetur ac <span class="badge bg-orange">21</span></li>
+                                        <li class="list-group-item">Vestibulum at eros <span class="badge bg-purple">18</span></li> -->
+                                    </ul>
+                                </div>
+                                <div class="footer">
+                                    <a routerLink="/confirmorder/{{orderdetails.order_id}}" class="btn btn-info btn-block btn-lg waves-effect">Proceed to Pay</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <!-- #END# Basic Card -->
+            
