@@ -1,0 +1,21 @@
+
+          <!-- Changelogs -->
+          <div class="block-header">
+              <h2>Available Offers</h2>
+          </div>
+          <div class="row clearfix" *ngFor="let value of OfferData">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>
+                              <button type="button" class="btn bg-cyan waves-effect">{{value['offer_code']}}</button>
+                              <small>{{value['offer_type']}}</small>
+                          </h2>
+                      </div>
+                      <div class="body">
+                          <p>{{value['details']}}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
