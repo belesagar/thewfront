@@ -1,0 +1,54 @@
+
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="card">
+          <div class="header">
+              <h2>
+                  Wallet Amount
+              </h2>
+             
+          </div>
+          <div class="body">
+              <div class="clearfix row">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="demo-color-box bg-grey">
+                          <div class="color-name font-40">Rs. {{walletData.wallet_total_amount}}</div>
+                          <!-- <div class="color-code">#F44336</div>
+                          <div class="color-class-name">bg-red</div> -->
+                      </div>
+                  </div>
+                  
+              </div>
+              <button type="button" class="btn btn-primary waves-effect">
+                <i class="material-icons">extension</i>
+                <span>Add Money</span>
+              </button>
+
+              <div (click)="getWalletHistory()">View Wallet History</div> 
+
+              <table class="table table-striped" *ngIf="historyData">
+                <thead>
+                    <tr>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th></th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let datavalue of walletHistoryData" data-toggle="dropdown">
+                        <th scope="row">Rs. {{datavalue.wallet_amount}}</th>
+                        <td>{{datavalue.created_at | date:'y-dd-MM'}}</td>
+                        <td>{{datavalue.type}}</td>
+                        <td>><span class="dropdown-menu pull-right">{{datavalue.comment}}</span></td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+          </div>
+      </div>
+  </div>
+</div>

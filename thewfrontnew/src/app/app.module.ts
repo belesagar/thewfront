@@ -33,6 +33,7 @@ import { OfferComponent } from './offer/offer.component';
 import { ConfirmOrderComponent } from './order/confirm-order/confirm-order.component';
 import { ServicecategoryComponent } from './servicecategory/servicecategory.component';
 import { LoginMiddelComponent } from './layout/login-middel/login-middel.component';
+import { WalletComponent } from './wallet/wallet.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { LoginMiddelComponent } from './layout/login-middel/login-middel.compone
     ConfirmOrderComponent,
     ServicecategoryComponent,
     LoginMiddelComponent,
+    WalletComponent,
   ],
   imports: [
     BrowserModule,

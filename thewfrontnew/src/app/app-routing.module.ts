@@ -15,6 +15,7 @@ import { ServicesComponent } from './services/services.component';
 import { RefferandearnComponent } from './refferandearn/refferandearn.component';
 import { MyprofileComponent } from './myprofile/myprofile.component';
 import { OfferComponent } from './offer/offer.component';
+import { WalletComponent } from './wallet/wallet.component';
 import { ConfirmOrderComponent } from './order/confirm-order/confirm-order.component';
 import { PaymentresultComponent } from './order/paymentresult/paymentresult.component';
 import { ServicecategoryComponent } from './servicecategory/servicecategory.component';
@@ -39,6 +40,7 @@ const routes: Routes = [
       {path:'refferandearn', component:RefferandearnComponent},
       {path:'profile', component:MyprofileComponent},
       {path:'offers', component:OfferComponent},
+      {path:'userwallet', component:WalletComponent},
       {path:'confirmorder/:id', component:ConfirmOrderComponent},
       {path:'paymentresult/:id', component:PaymentresultComponent,pathMatch: 'full'},
       {path:'errorpage', component:ErrorpageComponent},
@@ -55,4 +57,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [DashboardComponent,LoginComponent,HeaderComponent,VerifyotpComponent,UserlistComponent,PlaceOrderComponent,OrderdetailsComponent,LogoutComponent,ErrorpageComponent,ServicesComponent,RefferandearnComponent,MyprofileComponent]
+export const routingComponents = [DashboardComponent,LoginComponent,HeaderComponent,VerifyotpComponent,UserlistComponent,PlaceOrderComponent,OrderdetailsComponent,LogoutComponent,ErrorpageComponent,ServicesComponent,RefferandearnComponent,MyprofileComponent,WalletComponent]

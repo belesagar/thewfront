@@ -15,8 +15,11 @@ export class DashboardComponent implements OnInit {
   showlogin = false;
   
   message:string;
+  
+  constructor(private commonservice: CommonService) {
 
-  constructor(private commonservice: CommonService) { }
+
+   }
 
   ngOnInit() {
     this.commonservice.showloader();

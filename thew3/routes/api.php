@@ -60,6 +60,9 @@ Route::group(['middleware' => ['web','Cors']], function () {
 	Route::post('getPaymenDetails','Api\paymentController@getPaymenDetails')->name('getPaymenDetails');
 	Route::post('getTransactionData','Api\paymentController@getTransactionData')->name('getTransactionData');
 	
+	//This route for wallet
+	Route::get('getWalletData','Api\walletController@getWalletData')->name('getWalletData');
+	Route::get('getWalletHistory','Api\walletController@getWalletHistory')->name('getWalletHistory');
 
 });
 

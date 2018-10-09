@@ -51,15 +51,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _refferandearn_refferandearn_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./refferandearn/refferandearn.component */ "./src/app/refferandearn/refferandearn.component.ts");
 /* harmony import */ var _myprofile_myprofile_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./myprofile/myprofile.component */ "./src/app/myprofile/myprofile.component.ts");
 /* harmony import */ var _offer_offer_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./offer/offer.component */ "./src/app/offer/offer.component.ts");
-/* harmony import */ var _order_confirm_order_confirm_order_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./order/confirm-order/confirm-order.component */ "./src/app/order/confirm-order/confirm-order.component.ts");
-/* harmony import */ var _order_paymentresult_paymentresult_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./order/paymentresult/paymentresult.component */ "./src/app/order/paymentresult/paymentresult.component.ts");
-/* harmony import */ var _servicecategory_servicecategory_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./servicecategory/servicecategory.component */ "./src/app/servicecategory/servicecategory.component.ts");
+/* harmony import */ var _wallet_wallet_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./wallet/wallet.component */ "./src/app/wallet/wallet.component.ts");
+/* harmony import */ var _order_confirm_order_confirm_order_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./order/confirm-order/confirm-order.component */ "./src/app/order/confirm-order/confirm-order.component.ts");
+/* harmony import */ var _order_paymentresult_paymentresult_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./order/paymentresult/paymentresult.component */ "./src/app/order/paymentresult/paymentresult.component.ts");
+/* harmony import */ var _servicecategory_servicecategory_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./servicecategory/servicecategory.component */ "./src/app/servicecategory/servicecategory.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -96,12 +98,13 @@ var routes = [
             { path: 'orderdetails/:id', component: _order_orderdetails_orderdetails_component__WEBPACK_IMPORTED_MODULE_11__["OrderdetailsComponent"] },
             { path: 'placeorder', component: _order_place_order_place_order_component__WEBPACK_IMPORTED_MODULE_9__["PlaceOrderComponent"] },
             { path: 'services', component: _services_services_component__WEBPACK_IMPORTED_MODULE_13__["ServicesComponent"] },
-            { path: 'servicescategory/:id', component: _servicecategory_servicecategory_component__WEBPACK_IMPORTED_MODULE_19__["ServicecategoryComponent"] },
+            { path: 'servicescategory/:id', component: _servicecategory_servicecategory_component__WEBPACK_IMPORTED_MODULE_20__["ServicecategoryComponent"] },
             { path: 'refferandearn', component: _refferandearn_refferandearn_component__WEBPACK_IMPORTED_MODULE_14__["RefferandearnComponent"] },
             { path: 'profile', component: _myprofile_myprofile_component__WEBPACK_IMPORTED_MODULE_15__["MyprofileComponent"] },
             { path: 'offers', component: _offer_offer_component__WEBPACK_IMPORTED_MODULE_16__["OfferComponent"] },
-            { path: 'confirmorder/:id', component: _order_confirm_order_confirm_order_component__WEBPACK_IMPORTED_MODULE_17__["ConfirmOrderComponent"] },
-            { path: 'paymentresult/:id', component: _order_paymentresult_paymentresult_component__WEBPACK_IMPORTED_MODULE_18__["PaymentresultComponent"], pathMatch: 'full' },
+            { path: 'userwallet', component: _wallet_wallet_component__WEBPACK_IMPORTED_MODULE_17__["WalletComponent"] },
+            { path: 'confirmorder/:id', component: _order_confirm_order_confirm_order_component__WEBPACK_IMPORTED_MODULE_18__["ConfirmOrderComponent"] },
+            { path: 'paymentresult/:id', component: _order_paymentresult_paymentresult_component__WEBPACK_IMPORTED_MODULE_19__["PaymentresultComponent"], pathMatch: 'full' },
             { path: 'errorpage', component: _layout_errorpage_errorpage_component__WEBPACK_IMPORTED_MODULE_12__["ErrorpageComponent"] },
         ]
     },
@@ -122,7 +125,7 @@ var AppRoutingModule = /** @class */ (function () {
     return AppRoutingModule;
 }());
 
-var routingComponents = [_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_5__["DashboardComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_2__["LoginComponent"], _layout_header_header_component__WEBPACK_IMPORTED_MODULE_6__["HeaderComponent"], _verifyotp_verifyotp_component__WEBPACK_IMPORTED_MODULE_4__["VerifyotpComponent"], _users_userlist_userlist_component__WEBPACK_IMPORTED_MODULE_8__["UserlistComponent"], _order_place_order_place_order_component__WEBPACK_IMPORTED_MODULE_9__["PlaceOrderComponent"], _order_orderdetails_orderdetails_component__WEBPACK_IMPORTED_MODULE_11__["OrderdetailsComponent"], _logout_logout_component__WEBPACK_IMPORTED_MODULE_3__["LogoutComponent"], _layout_errorpage_errorpage_component__WEBPACK_IMPORTED_MODULE_12__["ErrorpageComponent"], _services_services_component__WEBPACK_IMPORTED_MODULE_13__["ServicesComponent"], _refferandearn_refferandearn_component__WEBPACK_IMPORTED_MODULE_14__["RefferandearnComponent"], _myprofile_myprofile_component__WEBPACK_IMPORTED_MODULE_15__["MyprofileComponent"]];
+var routingComponents = [_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_5__["DashboardComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_2__["LoginComponent"], _layout_header_header_component__WEBPACK_IMPORTED_MODULE_6__["HeaderComponent"], _verifyotp_verifyotp_component__WEBPACK_IMPORTED_MODULE_4__["VerifyotpComponent"], _users_userlist_userlist_component__WEBPACK_IMPORTED_MODULE_8__["UserlistComponent"], _order_place_order_place_order_component__WEBPACK_IMPORTED_MODULE_9__["PlaceOrderComponent"], _order_orderdetails_orderdetails_component__WEBPACK_IMPORTED_MODULE_11__["OrderdetailsComponent"], _logout_logout_component__WEBPACK_IMPORTED_MODULE_3__["LogoutComponent"], _layout_errorpage_errorpage_component__WEBPACK_IMPORTED_MODULE_12__["ErrorpageComponent"], _services_services_component__WEBPACK_IMPORTED_MODULE_13__["ServicesComponent"], _refferandearn_refferandearn_component__WEBPACK_IMPORTED_MODULE_14__["RefferandearnComponent"], _myprofile_myprofile_component__WEBPACK_IMPORTED_MODULE_15__["MyprofileComponent"], _wallet_wallet_component__WEBPACK_IMPORTED_MODULE_17__["WalletComponent"]];
 
 
 /***/ }),
@@ -300,12 +303,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _order_confirm_order_confirm_order_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./order/confirm-order/confirm-order.component */ "./src/app/order/confirm-order/confirm-order.component.ts");
 /* harmony import */ var _servicecategory_servicecategory_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./servicecategory/servicecategory.component */ "./src/app/servicecategory/servicecategory.component.ts");
 /* harmony import */ var _layout_login_middel_login_middel_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./layout/login-middel/login-middel.component */ "./src/app/layout/login-middel/login-middel.component.ts");
+/* harmony import */ var _wallet_wallet_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./wallet/wallet.component */ "./src/app/wallet/wallet.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -369,6 +374,7 @@ var AppModule = /** @class */ (function () {
                 _order_confirm_order_confirm_order_component__WEBPACK_IMPORTED_MODULE_30__["ConfirmOrderComponent"],
                 _servicecategory_servicecategory_component__WEBPACK_IMPORTED_MODULE_31__["ServicecategoryComponent"],
                 _layout_login_middel_login_middel_component__WEBPACK_IMPORTED_MODULE_32__["LoginMiddelComponent"],
+                _wallet_wallet_component__WEBPACK_IMPORTED_MODULE_33__["WalletComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -616,7 +622,7 @@ module.exports = "app-dashboard {\n    width: 100%;\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n      <!-- <div class=\"block-header\">\n          <h2>DASHBOARD</h2>\n      </div> -->\n\n      <!-- Widgets -->\n      <div class=\"row clearfix\">\n          <a routerLink=\"/placeorder\">\n            <div class=\"col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n                <div class=\"info-box bg-pink hover-expand-effect\">\n                    <div class=\"icon\">\n                        <i class=\"material-icons\">playlist_add_check</i>\n                    </div>\n                    <div class=\"content\">\n                        <div class=\"text\">Place your order</div>\n                        <!-- <div class=\"number count-to\" data-from=\"0\" data-to=\"125\" data-speed=\"15\" data-fresh-interval=\"20\"></div> -->\n                    </div>\n                </div>\n            </div>\n          </a>\n          <a routerLink=\"/services\">\n            <div class=\"col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n                <div class=\"info-box bg-cyan hover-expand-effect\">\n                    <div class=\"icon\">\n                        <i class=\"material-icons\">help</i>\n                    </div>\n                    <div class=\"content\">\n                        <div class=\"text\">Our Services</div>\n                        <!-- <div class=\"number count-to\" data-from=\"0\" data-to=\"257\" data-speed=\"1000\" data-fresh-interval=\"20\"></div> -->\n                    </div>\n                </div>\n            </div>\n          </a>\n          <!-- <div class=\"col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n              <div class=\"info-box bg-light-green hover-expand-effect\">\n                  <div class=\"icon\">\n                      <i class=\"material-icons\">forum</i>\n                  </div>\n                  <div class=\"content\">\n                      <div class=\"text\">NEW COMMENTS</div>\n                      <div class=\"number count-to\" data-from=\"0\" data-to=\"243\" data-speed=\"1000\" data-fresh-interval=\"20\"></div>\n                  </div>\n              </div>\n          </div>\n          <div class=\"col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n              <div class=\"info-box bg-orange hover-expand-effect\">\n                  <div class=\"icon\">\n                      <i class=\"material-icons\">person_add</i>\n                  </div>\n                  <div class=\"content\">\n                      <div class=\"text\">NEW VISITORS</div>\n                      <div class=\"number count-to\" data-from=\"0\" data-to=\"1225\" data-speed=\"1000\" data-fresh-interval=\"20\"></div>\n                  </div>\n              </div>\n          </div> -->\n      </div>\n      <!-- #END# Widgets -->\n      "
+module.exports = "\n      \n      \n      <!-- <div class=\"block-header\">\n          <h2>DASHBOARD</h2>\n      </div> -->\n\n      <!-- Widgets -->\n      <div class=\"row clearfix\">\n          <a routerLink=\"/placeorder\">\n            <div class=\"col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n                <div class=\"info-box bg-pink hover-expand-effect\">\n                    <div class=\"icon\">\n                        <i class=\"material-icons\">playlist_add_check</i>\n                    </div>\n                    <div class=\"content\">\n                        <div class=\"text\">Place your order</div>\n                        <!-- <div class=\"number count-to\" data-from=\"0\" data-to=\"125\" data-speed=\"15\" data-fresh-interval=\"20\"></div> -->\n                    </div>\n                </div>\n            </div>\n          </a>\n          <a routerLink=\"/services\">\n            <div class=\"col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n                <div class=\"info-box bg-cyan hover-expand-effect\">\n                    <div class=\"icon\">\n                        <i class=\"material-icons\">help</i>\n                    </div>\n                    <div class=\"content\">\n                        <div class=\"text\">Our Services</div>\n                        <!-- <div class=\"number count-to\" data-from=\"0\" data-to=\"257\" data-speed=\"1000\" data-fresh-interval=\"20\"></div> -->\n                    </div>\n                </div>\n            </div>\n          </a>\n          <!-- <div class=\"col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n              <div class=\"info-box bg-light-green hover-expand-effect\">\n                  <div class=\"icon\">\n                      <i class=\"material-icons\">forum</i>\n                  </div>\n                  <div class=\"content\">\n                      <div class=\"text\">NEW COMMENTS</div>\n                      <div class=\"number count-to\" data-from=\"0\" data-to=\"243\" data-speed=\"1000\" data-fresh-interval=\"20\"></div>\n                  </div>\n              </div>\n          </div>\n          <div class=\"col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n              <div class=\"info-box bg-orange hover-expand-effect\">\n                  <div class=\"icon\">\n                      <i class=\"material-icons\">person_add</i>\n                  </div>\n                  <div class=\"content\">\n                      <div class=\"text\">NEW VISITORS</div>\n                      <div class=\"number count-to\" data-from=\"0\" data-to=\"1225\" data-speed=\"1000\" data-fresh-interval=\"20\"></div>\n                  </div>\n              </div>\n          </div> -->\n      </div>\n      <!-- #END# Widgets -->\n      "
 
 /***/ }),
 
@@ -1210,7 +1216,7 @@ module.exports = ".m-aside-left.m-aside-left--skin-dark {\n    background-color:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- #Top Bar --> \n<section>\n  <!-- Left Sidebar -->\n  <aside id=\"leftsidebar\" class=\"sidebar\">\n      <!-- User Info -->\n      <div class=\"user-info\">\n          <div class=\"image\">\n              <img src=\"assets/images/user.png\" width=\"48\" height=\"48\" alt=\"User\" />\n          </div>\n          <div class=\"info-container\">\n              <div class=\"name\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Name</div>\n              <div class=\"email\">Mobile</div>\n          </div>\n      </div>\n      <!-- #User Info -->\n      <!-- Menu -->\n      <div class=\"menu\">\n          <ul class=\"list\">\n              <li class=\"active\">\n                  <a routerLink=\"/dashboard\">\n                      <i class=\"material-icons\">home</i>\n                      <span>Home</span>\n                  </a>\n              </li>\n              <li>\n                  <a routerLink=\"/services\">\n                      <i class=\"material-icons\">local_laundry_service</i>\n                      <span>Our Services</span>\n                  </a>\n              </li>\n              <li>\n                  <a routerLink=\"/orderlist\">\n                      <i class=\"material-icons\">airport_shuttle</i>\n                      <span>Your Orders</span>\n                  </a>\n              </li>\n              <li>\n                <a routerLink=\"/offers\">\n                    <i class=\"material-icons\">local_offer</i>\n                    <span>Offers</span>\n                </a>\n            </li>\n            <li>\n                <a routerLink=\"/offers\">\n                    <i class=\"material-icons\">account_balance_wallet</i>\n                    <span>Wallet</span>\n                </a>\n            </li>\n            <li>\n                <a routerLink=\"/refferandearn\">\n                    <i class=\"material-icons\">layers</i>\n                    <span>Reffer & Earn</span>\n                </a>\n            </li>\n              <li>\n                <a href=\"tel:+919975541407\">\n                    <i class=\"material-icons\">call</i>\n                    <span>Call Us</span>\n                </a>\n            </li>\n              <li>\n                <a routerLink=\"/logout\">\n                    <i class=\"material-icons\">input</i>\n                    <span>Log Out</span>\n                </a>\n            </li>\n\n          </ul>\n      </div>\n      <!-- #Menu -->\n      <!-- Footer -->\n      <div class=\"legal\">\n          <div class=\"copyright\">\n              &copy; 2018 <a href=\"javascript:void(0);\">Thew</a>.\n          </div>\n          <div class=\"version\">\n              <b>Version: </b> 1.0.5\n          </div>\n      </div>\n      <!-- #Footer -->\n  </aside>\n  <!-- #END# Left Sidebar -->\n  \n</section>"
+module.exports = "<!-- #Top Bar --> \n<section>\n  <!-- Left Sidebar -->\n  <aside id=\"leftsidebar\" class=\"sidebar\">\n      <!-- User Info -->\n      <div class=\"user-info\">\n          <div class=\"image\">\n              <img src=\"assets/images/user.png\" width=\"48\" height=\"48\" alt=\"User\" />\n          </div>\n          <div class=\"info-container\">\n              <div class=\"name\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Name</div>\n              <div class=\"email\">Mobile</div>\n          </div>\n      </div>\n      <!-- #User Info -->\n      <!-- Menu -->\n      <div class=\"menu\">\n          <ul class=\"list\">\n              <li class=\"active\">\n                  <a routerLink=\"/dashboard\">\n                      <i class=\"material-icons\">home</i>\n                      <span>Home</span>\n                  </a>\n              </li>\n              <li>\n                  <a routerLink=\"/services\">\n                      <i class=\"material-icons\">local_laundry_service</i>\n                      <span>Our Services</span>\n                  </a>\n              </li>\n              <li>\n                  <a routerLink=\"/orderlist\">\n                      <i class=\"material-icons\">airport_shuttle</i>\n                      <span>Your Orders</span>\n                  </a>\n              </li>\n              <li>\n                <a routerLink=\"/offers\">\n                    <i class=\"material-icons\">local_offer</i>\n                    <span>Offers</span>\n                </a>\n            </li>\n            <li>\n                <a routerLink=\"/userwallet\">\n                    <i class=\"material-icons\">account_balance_wallet</i>\n                    <span>Wallet</span>\n                </a>\n            </li>\n            <li>\n                <a routerLink=\"/refferandearn\">\n                    <i class=\"material-icons\">layers</i>\n                    <span>Reffer & Earn</span>\n                </a>\n            </li>\n              <li>\n                <a href=\"tel:+919975541407\">\n                    <i class=\"material-icons\">call</i>\n                    <span>Call Us</span>\n                </a>\n            </li>\n              <li>\n                <a routerLink=\"/logout\">\n                    <i class=\"material-icons\">input</i>\n                    <span>Log Out</span>\n                </a>\n            </li>\n\n          </ul>\n      </div>\n      <!-- #Menu -->\n      <!-- Footer -->\n      <div class=\"legal\">\n          <div class=\"copyright\">\n              &copy; 2018 <a href=\"javascript:void(0);\">Thew</a>.\n          </div>\n          <div class=\"version\">\n              <b>Version: </b> 1.0.5\n          </div>\n      </div>\n      <!-- #Footer -->\n  </aside>\n  <!-- #END# Left Sidebar -->\n  \n</section>"
 
 /***/ }),
 
@@ -3152,6 +3158,100 @@ var VerifyotpComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _common_service__WEBPACK_IMPORTED_MODULE_4__["CommonService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]])
     ], VerifyotpComponent);
     return VerifyotpComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/wallet/wallet.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/wallet/wallet.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/wallet/wallet.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/wallet/wallet.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<div class=\"row\">\n  <div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n      <div class=\"card\">\n          <div class=\"header\">\n              <h2>\n                  Wallet Amount\n              </h2>\n             \n          </div>\n          <div class=\"body\">\n              <div class=\"clearfix row\">\n                  <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n                      <div class=\"demo-color-box bg-grey\">\n                          <div class=\"color-name font-40\">Rs. {{walletData.wallet_total_amount}}</div>\n                          <!-- <div class=\"color-code\">#F44336</div>\n                          <div class=\"color-class-name\">bg-red</div> -->\n                      </div>\n                  </div>\n                  \n              </div>\n              <button type=\"button\" class=\"btn btn-primary waves-effect\">\n                <i class=\"material-icons\">extension</i>\n                <span>Add Money</span>\n              </button>\n\n              <div (click)=\"getWalletHistory()\">View Wallet History</div> \n\n              <table class=\"table table-striped\" *ngIf=\"historyData\">\n                <thead>\n                    <tr>\n                        <th>Amount</th>\n                        <th>Date</th>\n                        <th>Type</th>\n                        <th></th>\n                       \n                    </tr>\n                </thead>\n                <tbody>\n                    <tr *ngFor=\"let datavalue of walletHistoryData\" data-toggle=\"dropdown\">\n                        <th scope=\"row\">Rs. {{datavalue.wallet_amount}}</th>\n                        <td>{{datavalue.created_at | date:'y-dd-MM'}}</td>\n                        <td>{{datavalue.type}}</td>\n                        <td>><span class=\"dropdown-menu pull-right\">{{datavalue.comment}}</span></td>\n                        \n                    </tr>\n                    \n                </tbody>\n            </table>\n\n          </div>\n      </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/wallet/wallet.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/wallet/wallet.component.ts ***!
+  \********************************************/
+/*! exports provided: WalletComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WalletComponent", function() { return WalletComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _constant_constant_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constant/constant.component */ "./src/app/constant/constant.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var WalletComponent = /** @class */ (function () {
+    function WalletComponent(http) {
+        this.http = http;
+        this.walletData = {};
+        this.walletHistoryData = {};
+        this.historyData = false;
+    }
+    WalletComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var apiUrl = _constant_constant_component__WEBPACK_IMPORTED_MODULE_2__["Constant"].API_URL + "getWalletData";
+        return this.http.get(apiUrl).subscribe(function (response) {
+            console.log(response);
+            if (response['ERROR_CODE'] == 0) {
+                _this.walletData = response['DATA'];
+                // let data = response['DATA']['order_data'];
+                // let service_data = response['DATA']['service_data'];
+            }
+        });
+    };
+    WalletComponent.prototype.getWalletHistory = function () {
+        var _this = this;
+        var apiUrl = _constant_constant_component__WEBPACK_IMPORTED_MODULE_2__["Constant"].API_URL + "getWalletHistory";
+        return this.http.get(apiUrl).subscribe(function (response) {
+            console.log(response);
+            if (response['ERROR_CODE'] == 0) {
+                _this.historyData = true;
+                _this.walletHistoryData = response['DATA'];
+                // let data = response['DATA']['order_data'];
+                // let service_data = response['DATA']['service_data'];
+            }
+        });
+    };
+    WalletComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-wallet',
+            template: __webpack_require__(/*! ./wallet.component.html */ "./src/app/wallet/wallet.component.html"),
+            styles: [__webpack_require__(/*! ./wallet.component.css */ "./src/app/wallet/wallet.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], WalletComponent);
+    return WalletComponent;
 }());
 
 
