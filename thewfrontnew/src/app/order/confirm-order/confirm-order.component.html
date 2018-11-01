@@ -48,10 +48,11 @@
                               </div>
                               
                             </form>
-                            <blockquote *ngIf="offer_box">
+                            <blockquote *ngIf="offer_box" style="position:relative">
+                                <div class="demo-google-material-icon" (click)="cancleOffer()"> <i class="material-icons">cancel</i></div>
                                 <p>{{offerData.offer_code}}<span style="float: right">-&#x20B9;{{offer_discount}}</span></p>
                                 <footer><cite title="Source Title" style="color:green;">{{offerData.details}}</cite></footer>
-                                <div class="demo-google-material-icon" (click)="cancleOffer()"> <i class="material-icons">cancel</i></div>
+                               
                             </blockquote>
                           </div>
                           <br>

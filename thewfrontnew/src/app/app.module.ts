@@ -31,9 +31,10 @@ import { MyprofileComponent } from './myprofile/myprofile.component';
 import { PaymentresultComponent } from './order/paymentresult/paymentresult.component';
 import { OfferComponent } from './offer/offer.component';
 import { ConfirmOrderComponent } from './order/confirm-order/confirm-order.component';
-import { ServicecategoryComponent } from './servicecategory/servicecategory.component';
+import { ServicecategoryComponent,NgbdModalContent } from './servicecategory/servicecategory.component';
 import { LoginMiddelComponent } from './layout/login-middel/login-middel.component';
 import { WalletComponent } from './wallet/wallet.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { WalletComponent } from './wallet/wallet.component';
     OfferComponent,
     ConfirmOrderComponent,
     ServicecategoryComponent,
+    NgbdModalContent,
     LoginMiddelComponent,
     WalletComponent,
   ],
@@ -69,8 +71,10 @@ import { WalletComponent } from './wallet/wallet.component';
     HttpClientModule,
     LoadingModule,
     Ng4LoadingSpinnerModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule.forRoot()
   ],
+  entryComponents: [NgbdModalContent],
   providers: [
     {
       provide:HTTP_INTERCEPTORS,

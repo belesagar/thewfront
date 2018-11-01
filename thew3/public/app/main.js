@@ -304,12 +304,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _servicecategory_servicecategory_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./servicecategory/servicecategory.component */ "./src/app/servicecategory/servicecategory.component.ts");
 /* harmony import */ var _layout_login_middel_login_middel_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./layout/login-middel/login-middel.component */ "./src/app/layout/login-middel/login-middel.component.ts");
 /* harmony import */ var _wallet_wallet_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./wallet/wallet.component */ "./src/app/wallet/wallet.component.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -373,6 +375,7 @@ var AppModule = /** @class */ (function () {
                 _offer_offer_component__WEBPACK_IMPORTED_MODULE_29__["OfferComponent"],
                 _order_confirm_order_confirm_order_component__WEBPACK_IMPORTED_MODULE_30__["ConfirmOrderComponent"],
                 _servicecategory_servicecategory_component__WEBPACK_IMPORTED_MODULE_31__["ServicecategoryComponent"],
+                _servicecategory_servicecategory_component__WEBPACK_IMPORTED_MODULE_31__["NgbdModalContent"],
                 _layout_login_middel_login_middel_component__WEBPACK_IMPORTED_MODULE_32__["LoginMiddelComponent"],
                 _wallet_wallet_component__WEBPACK_IMPORTED_MODULE_33__["WalletComponent"],
             ],
@@ -383,8 +386,10 @@ var AppModule = /** @class */ (function () {
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
                 ngx_loading__WEBPACK_IMPORTED_MODULE_22__["LoadingModule"],
                 ng4_loading_spinner__WEBPACK_IMPORTED_MODULE_23__["Ng4LoadingSpinnerModule"].forRoot(),
-                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"]
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"],
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_34__["NgbModule"].forRoot()
             ],
+            entryComponents: [_servicecategory_servicecategory_component__WEBPACK_IMPORTED_MODULE_31__["NgbdModalContent"]],
             providers: [
                 {
                     provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"],
@@ -1007,7 +1012,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* .loading{\n\tposition:fixed;\n\twidth:100%;\n\theight:100%;\n\ttop:0px;\n\tleft:0px;\n\tbackground-color:rgba(0,0,0,0.6);\n\tz-index:5;\n\tdisplay:none;\n}\n.loading img{\n\tposition:absolute;\n\ttop:50%;\n\tleft:50%;\n\t\twidth:50px;\n} */\n\n/* .loader{\n    position: absolute;\n    width: 200px;\n    left: 46%;\n    top: 50%;\n    /* position:absolute;\n\ttop:50%;\n\tleft:50%;\n\t\twidth:50px; \n} */\n\n.loaderajaxbx{ width: 100%; height: 100vh; position: fixed; text-align: center; padding-top: 20%; background: rgba(0, 0, 0, 0.5); z-index:9999;  }\n\n.m-loader {\n    margin-top: 21% !important;\n}\n\n.loadermain {\n    width: 100%;\n    height: 100vh;\n    position: fixed;\n    z-index: 99;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n    left: 0;\n}\n\n.m-loader::before {\n    width: 80px;\n    height: 80px;\n    border-top-color: #5867dd;\n}"
+module.exports = "/* .loading{\n\tposition:fixed;\n\twidth:100%;\n\theight:100%;\n\ttop:0px;\n\tleft:0px;\n\tbackground-color:rgba(0,0,0,0.6);\n\tz-index:5;\n\tdisplay:none;\n}\n.loading img{\n\tposition:absolute;\n\ttop:50%;\n\tleft:50%;\n\t\twidth:50px;\n} */\n\n/* .loader{\n    position: absolute;\n    width: 200px;\n    left: 46%;\n    top: 50%;\n    /* position:absolute;\n\ttop:50%;\n\tleft:50%;\n\t\twidth:50px; \n} */\n\n.loaderajaxbx{ width: 100%; height: 100vh; position: fixed; text-align: center; padding-top: 20%; background: rgba(0, 0, 0, 0.5); z-index:9999;  }\n\n.m-loader {\n    margin-top: 21% !important;\n}\n\n.loadermain {\n    width: 100%;\n    height: 100vh;\n    position: fixed;\n    z-index: 99;\n    background: rgba(0, 0, 0, 0.5);\n    top: 0;\n    left: 0;\n}\n\n.m-loader::before {\n    width: 80px;\n    height: 80px;\n    border-top-color: #5867dd;\n}\n\n.loading{\n\tposition:fixed;\n\twidth:100%;\n\theight:100vh;\n\ttop:0px;\n\tleft:0px;\n\tbackground-color:rgba(0,0,0,0.6);\n\tz-index:5;\n\tdisplay:none;\n\ttext-align: center;\n    padding-top: 20%;\n}\n\n.spinner img {\n    max-width: 300px;\n    top: 40%;\n}"
 
 /***/ }),
 
@@ -1018,7 +1023,7 @@ module.exports = "/* .loading{\n\tposition:fixed;\n\twidth:100%;\n\theight:100%;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<!-- <div id=\"searching\" class=\"loading loader\" *ngIf=\"showloader\">\n    <a href=\"#\" class=\"btn m-btn btn-outline-primary m-loader m-loader--primary m-loader--left\">\n        Button\n      </a>\n</div> -->\n\n<!-- <ngx-loading [show]=\"loading\"><div id=\"searching\" class=\"loading loader\">Loading...</div></ngx-loading> -->\n\n<ng4-loading-spinner [loadingText]=\"\" [template]=''>Please Wait.....</ng4-loading-spinner>\n<!-- <div class=\"visible spinner center loadermain\">\n    <div class=\"m-loader\"></div>\n</div> -->\n"
+module.exports = "\n\n<!-- <div id=\"searching\" class=\"loading loader\" *ngIf=\"showloader\">\n    <a href=\"#\" class=\"btn m-btn btn-outline-primary m-loader m-loader--primary m-loader--left\">\n        Button\n      </a>\n</div> -->\n\n<!-- <ngx-loading [show]=\"loading\"><div id=\"searching\" class=\"loading loader\">Loading...</div></ngx-loading> -->\n\n<ng4-loading-spinner [loadingText]=\"\" [template]='template' [zIndex]=\"9999\"></ng4-loading-spinner>\n<!-- <div class=\"visible spinner center loadermain\">\n    <div class=\"m-loader\"></div>\n</div> -->\n"
 
 /***/ }),
 
@@ -1046,7 +1051,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var LoaderComponent = /** @class */ (function () {
     function LoaderComponent() {
         // template: string = '<div id="searching" class="loading loader" *ngIf="showloader"><a href="#" class="btn m-btn btn-outline-primary m-loader m-loader--primary m-loader--left">Button</a></div>';
-        this.template = '<div class="m-loader"></div>';
+        this.template = "<img src='assets/images/loading.gif'/>";
     }
     LoaderComponent.prototype.ngOnInit = function () {
     };
@@ -1688,7 +1693,7 @@ var OfferComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "blockquote{ border: 1px solid #eee;\n    border-left: 5px solid #eee; }\n\n.demo-google-material-icon {\n    text-align: right;\n    position: absolute;\n    right: -10px;\n    top: -10px;\n}\n"
 
 /***/ }),
 
@@ -1699,7 +1704,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n          <div class=\"block-header\">\n              <h2>Payment Details - {{orderdetails.order_unique_id}} </h2>\n          </div>\n          <!-- Blockquotes -->\n          <div class=\"row clearfix\" >\n              <div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n                  <div class=\"card\">\n                      <div class=\"header\">\n                          <h2>\n                              Confirm Order\n                          </h2>\n                          \n                      </div>\n                      <div class=\"body\">\n                          <blockquote class=\"m-b-25\">\n                              <p>Order Amount<span style=\"float: right\">&#x20B9;{{orderdetails.amount_of_order}}</span></p>\n                          </blockquote>\n                          <blockquote class=\"m-b-25\">\n                              <p>Remaning Amount<span style=\"float: right\">+&#x20B9;0</span></p>\n                          </blockquote>\n                          <blockquote class=\"m-b-25\" *ngIf=\"wallet_amount\">\n                              <p>Wallet Amount<span style=\"float: right\">-&#x20B9;{{orderdetails.total_amount}}</span></p>\n                          </blockquote>\n\n                          <div>\n                            <button type=\"button\" class=\"btn btn-success waves-effect\" *ngIf=\"apply_promocode_button\" (click)=\"apply_promocode()\">Have a promocode</button>\n\n                            <form class=\"m-form m-form--fit m-form--label-align-right\" *ngIf=\"apply_promocode_box\" novalidate [formGroup]='apply_promocode_form' (ngSubmit) = \"onApply()\">\n                              <div class=\"m-portlet__body\">\n                                  \n                                <div class=\"form-group form-float form-group-lg\">\n                                  <div class=\"form-line\">\n                                    <input type=\"text\" class=\"form-control\" formControlName='promocode' [(ngModel)]=\"promocode_value\" placeholder=\"Apply Promocode\" oninput=\"if(value.length>15)value=value.slice(0,15)\">\n                                    \n                                  </div>\n                                  <div *ngIf=\"promocode.invalid && (promocode.dirty || promocode.touched)\">\n                                        <label class=\"error\" *ngIf=\"promocode.errors.required\">Please enter Pramocode</label>\n                                        <label class=\"error\" *ngIf=\"promocode.errors.minlength\">Please enter at least 3 characters.</label>\n                                        <label class=\"error\" *ngIf=\"promocode.errors.pattern\">Please enter valid name.</label>\n                                 </div>\n                                </div>\n                                <span class=\"input-group-btn\">\n                                    <button class=\"btn btn-primary\" type=\"submit\"> \n                                        Apply\n                                    </button>\n                                </span>\n                              </div>\n                              \n                            </form>\n                            <blockquote *ngIf=\"offer_box\">\n                                <p>{{offerData.offer_code}}<span style=\"float: right\">-&#x20B9;{{offer_discount}}</span></p>\n                                <footer><cite title=\"Source Title\" style=\"color:green;\">{{offerData.details}}</cite></footer>\n                                <div class=\"demo-google-material-icon\" (click)=\"cancleOffer()\"> <i class=\"material-icons\">cancel</i></div>\n                            </blockquote>\n                          </div>\n                          <br>\n                          <blockquote class=\"m-b-25\">\n                              <p><b>Total Bill</b><span style=\"float: right\"><b>&#x20B9;{{total_bill}}</b></span></p>\n                          </blockquote>\n\n                          <div class=\"footer\">\n                              <button type=\"button\" class=\"btn btn-info btn-block btn-lg waves-effect\" (click)=\"proceed_to_pay()\">Pay Rs. {{total_bill}}</button>\n                          </div>\n\n                      </div>\n                  </div>\n              </div>\n          </div>\n          <!-- #END# Blockquotes -->\n          \n     "
+module.exports = "\n          <div class=\"block-header\">\n              <h2>Payment Details - {{orderdetails.order_unique_id}} </h2>\n          </div>\n          <!-- Blockquotes -->\n          <div class=\"row clearfix\" >\n              <div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n                  <div class=\"card\">\n                      <div class=\"header\">\n                          <h2>\n                              Confirm Order\n                          </h2>\n                          \n                      </div>\n                      <div class=\"body\">\n                          <blockquote class=\"m-b-25\">\n                              <p>Order Amount<span style=\"float: right\">&#x20B9;{{orderdetails.amount_of_order}}</span></p>\n                          </blockquote>\n                          <blockquote class=\"m-b-25\">\n                              <p>Remaning Amount<span style=\"float: right\">+&#x20B9;0</span></p>\n                          </blockquote>\n                          <blockquote class=\"m-b-25\" *ngIf=\"wallet_amount\">\n                              <p>Wallet Amount<span style=\"float: right\">-&#x20B9;{{orderdetails.total_amount}}</span></p>\n                          </blockquote>\n\n                          <div>\n                            <button type=\"button\" class=\"btn btn-success waves-effect\" *ngIf=\"apply_promocode_button\" (click)=\"apply_promocode()\">Have a promocode</button>\n\n                            <form class=\"m-form m-form--fit m-form--label-align-right\" *ngIf=\"apply_promocode_box\" novalidate [formGroup]='apply_promocode_form' (ngSubmit) = \"onApply()\">\n                              <div class=\"m-portlet__body\">\n                                  \n                                <div class=\"form-group form-float form-group-lg\">\n                                  <div class=\"form-line\">\n                                    <input type=\"text\" class=\"form-control\" formControlName='promocode' [(ngModel)]=\"promocode_value\" placeholder=\"Apply Promocode\" oninput=\"if(value.length>15)value=value.slice(0,15)\">\n                                    \n                                  </div>\n                                  <div *ngIf=\"promocode.invalid && (promocode.dirty || promocode.touched)\">\n                                        <label class=\"error\" *ngIf=\"promocode.errors.required\">Please enter Pramocode</label>\n                                        <label class=\"error\" *ngIf=\"promocode.errors.minlength\">Please enter at least 3 characters.</label>\n                                        <label class=\"error\" *ngIf=\"promocode.errors.pattern\">Please enter valid name.</label>\n                                 </div>\n                                </div>\n                                <span class=\"input-group-btn\">\n                                    <button class=\"btn btn-primary\" type=\"submit\"> \n                                        Apply\n                                    </button>\n                                </span>\n                              </div>\n                              \n                            </form>\n                            <blockquote *ngIf=\"offer_box\" style=\"position:relative\">\n                                <div class=\"demo-google-material-icon\" (click)=\"cancleOffer()\"> <i class=\"material-icons\">cancel</i></div>\n                                <p>{{offerData.offer_code}}<span style=\"float: right\">-&#x20B9;{{offer_discount}}</span></p>\n                                <footer><cite title=\"Source Title\" style=\"color:green;\">{{offerData.details}}</cite></footer>\n                               \n                            </blockquote>\n                          </div>\n                          <br>\n                          <blockquote class=\"m-b-25\">\n                              <p><b>Total Bill</b><span style=\"float: right\"><b>&#x20B9;{{total_bill}}</b></span></p>\n                          </blockquote>\n\n                          <div class=\"footer\">\n                              <button type=\"button\" class=\"btn btn-info btn-block btn-lg waves-effect\" (click)=\"proceed_to_pay()\">Pay Rs. {{total_bill}}</button>\n                          </div>\n\n                      </div>\n                  </div>\n              </div>\n          </div>\n          <!-- #END# Blockquotes -->\n          \n     "
 
 /***/ }),
 
@@ -2705,7 +2710,7 @@ var RefferandearnComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".dark-modal .modal-content {\n    background-color: #292b2c;\n    color: white;\n  }\n  .dark-modal .close {\n    color: white;\n  }\n  .light-blue-backdrop {\n    background-color: #5cb3fd;\n  }\n  .modal-dialog {\n    margin-top: 23%;\n  }"
 
 /***/ }),
 
@@ -2716,7 +2721,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row clearfix\">\n        <div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n            <div class=\"card\">\n                <div class=\"header\">\n                    <h2>\n                        Service Categories\n                    </h2>\n                    \n                </div>\n                <div class=\"body\">\n                    <div class=\"row clearfix jsdemo-notification-button\">\n                        <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\" *ngFor=\"let datavalue of responceData\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"top\" data-placement-align=\"left\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\" (click)=\"getCategoryData(datavalue['services_category_id'])\">\n                                {{datavalue['category_name']}}\n                            </button>\n                        </div>\n                        <!-- <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"top\" data-placement-align=\"center\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\">\n                                TOP CENTER\n                            </button>\n                        </div>\n                        <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"top\" data-placement-align=\"right\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\">\n                                TOP RIGHT\n                            </button>\n                        </div>\n                        <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"bottom\" data-placement-align=\"left\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\">\n                                BOTTOM LEFT\n                            </button>\n                        </div>\n                        <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"bottom\" data-placement-align=\"center\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\">\n                                BOTTOM CENTER\n                            </button>\n                        </div>\n                        <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"bottom\" data-placement-align=\"right\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\">\n                                BOTTOM RIGHT\n                            </button>\n                        </div> -->\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n\n    <div class=\"modal fade {{fade}}\" id=\"defaultModal\" tabindex=\"-1\" role=\"dialog\" [ngStyle]=\"{'display':display}\">\n            <div class=\"modal-dialog\" role=\"document\">\n                <div class=\"modal-content\">\n                    <div class=\"modal-header\">\n                        <h4 class=\"modal-title\" id=\"defaultModalLabel\">Modal title</h4>\n                    </div>\n                    <div class=\"modal-body\">\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan\n                        vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper.\n                        Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus\n                        nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla.\n                        Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc.\n                    </div>\n                    <div class=\"modal-footer\">\n                        <button type=\"button\" class=\"btn btn-link waves-effect\">SAVE CHANGES</button>\n                        <button type=\"button\" class=\"btn btn-link waves-effect\" data-dismiss=\"modal\">CLOSE</button>\n                    </div>\n                </div>\n            </div>\n        </div>"
+module.exports = "<ng-template #model let-modal>\n        <div class=\"modal-header\">\n          <h4 class=\"modal-title\">Modal title</h4>\n          <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss('Cross click')\">\n            <span aria-hidden=\"true\">&times;</span>\n          </button>\n        </div>\n        <div class=\"modal-body\">\n          <p>One fine body&hellip;</p>\n        </div>\n        <div class=\"modal-footer\">\n          <button type=\"button\" class=\"btn btn-light\" (click)=\"modal.close('Close click')\">Close</button>\n        </div>\n      </ng-template>\n\n<div class=\"row clearfix\">\n        <div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n            <div class=\"card\">\n                <div class=\"header\">\n                    <h2>\n                        Service Categories\n                    </h2>\n                    \n                </div>\n                <div class=\"body\">\n                    <div class=\"row clearfix jsdemo-notification-button\">\n                        <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\" *ngFor=\"let datavalue of responceData\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"top\" data-placement-align=\"left\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\" (click)=\"getCategoryData(datavalue['services_category_id'],datavalue['category_name'])\">\n                                {{datavalue['category_name']}}\n                            </button>\n                        </div>\n                        <!-- <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"top\" data-placement-align=\"center\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\">\n                                TOP CENTER\n                            </button>\n                        </div>\n                        <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"top\" data-placement-align=\"right\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\">\n                                TOP RIGHT\n                            </button>\n                        </div>\n                        <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"bottom\" data-placement-align=\"left\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\">\n                                BOTTOM LEFT\n                            </button>\n                        </div>\n                        <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"bottom\" data-placement-align=\"center\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\">\n                                BOTTOM CENTER\n                            </button>\n                        </div>\n                        <div class=\"col-xs-12 col-sm-6 col-md-3 col-lg-2\">\n                            <button type=\"button\" class=\"btn btn-primary btn-block waves-effect\" data-placement-from=\"bottom\" data-placement-align=\"right\"\n                                    data-animate-enter=\"\" data-animate-exit=\"\" data-color-name=\"bg-black\">\n                                BOTTOM RIGHT\n                            </button>\n                        </div> -->\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n\n    <!-- <div class=\"modal fade {{fade}}\" id=\"defaultModal\" tabindex=\"-1\" role=\"dialog\" [ngStyle]=\"{'display':display}\">\n            <div class=\"modal-dialog\" role=\"document\">\n                <div class=\"modal-content\">\n                    <div class=\"modal-header\">\n                        <h4 class=\"modal-title\" id=\"defaultModalLabel\">Modal title</h4>\n                    </div>\n                    <div class=\"modal-body\">\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan\n                        vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper.\n                        Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus\n                        nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla.\n                        Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc.\n                    </div>\n                    <div class=\"modal-footer\">\n                        <button type=\"button\" class=\"btn btn-link waves-effect\">SAVE CHANGES</button>\n                        <button type=\"button\" class=\"btn btn-link waves-effect\" data-dismiss=\"modal\">CLOSE</button>\n                    </div>\n                </div>\n            </div>\n        </div> -->\n      \n        <div class=\"backdrop\" [ngStyle]=\"{'display':display}\"></div>\n\n\n        <div class=\"modal\" tabindex=\"-1\" role=\"dialog\"  [ngStyle]=\"{'display':display}\">\n\n\n            <div class=\"modal-dialog\" role=\"document\">\n                <div class=\"modal-content\">\n                    <div class=\"modal-header\">\n                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" (click)=\"onCloseHandled()\">&times;</button>\n                        <h4 class=\"modal-title\" id=\"defaultModalLabel\">{{category_name}}</h4>\n                    </div>\n                    <div class=\"modal-body\">\n                        <table class=\"table table-striped\">\n                            <!-- <thead>\n                                <tr>\n                                    <th>Amount</th>\n                                    <th>Date</th>\n                                    <th>Type</th>\n                                    <th></th>\n                                \n                                </tr>\n                            </thead> -->\n                            <tbody>\n                                <tr *ngFor=\"let datavalue of categorytypedata\">\n                                    <td>{{datavalue.type_name}}</td>\n                                    <th scope=\"row\">Rs. {{datavalue.type_price}}</th>\n                                \n                                </tr>\n                                \n                            </tbody>\n                        </table>\n                    </div>\n                    <div class=\"modal-footer\">\n                        <!-- <button type=\"button\" class=\"btn btn-link waves-effect\" data-dismiss=\"modal\" (click)=\"onCloseHandled()\">CLOSE</button> -->\n                    </div>\n                </div>\n            </div>\n\n\n        </div><!-- /.modal !-->"
 
 /***/ }),
 
@@ -2724,17 +2729,19 @@ module.exports = "<div class=\"row clearfix\">\n        <div class=\"col-lg-12 c
 /*!**************************************************************!*\
   !*** ./src/app/servicecategory/servicecategory.component.ts ***!
   \**************************************************************/
-/*! exports provided: ServicecategoryComponent */
+/*! exports provided: NgbdModalContent, ServicecategoryComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgbdModalContent", function() { return NgbdModalContent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServicecategoryComponent", function() { return ServicecategoryComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _constant_constant_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constant/constant.component */ "./src/app/constant/constant.component.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _common_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common.service */ "./src/app/common.service.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2749,12 +2756,32 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+var NgbdModalContent = /** @class */ (function () {
+    function NgbdModalContent(activeModal) {
+        this.activeModal = activeModal;
+    }
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], NgbdModalContent.prototype, "name", void 0);
+    NgbdModalContent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'ngbd-modal-content',
+            template: "\n    <div class=\"modal-header\">\n      <h4 class=\"modal-title\">Hi there!</h4>\n      <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"activeModal.dismiss('Cross click')\">\n        <span aria-hidden=\"true\">&times;</span>\n      </button>\n    </div>\n    <div class=\"modal-body\">\n      <p>Hello, {{name}}!</p>\n    </div>\n    <div class=\"modal-footer\">\n      <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"activeModal.close('Close click')\">Close</button>\n    </div>\n  "
+        }),
+        __metadata("design:paramtypes", [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbActiveModal"]])
+    ], NgbdModalContent);
+    return NgbdModalContent;
+}());
+
 var ServicecategoryComponent = /** @class */ (function () {
-    function ServicecategoryComponent(http, router, route, commonservice) {
+    function ServicecategoryComponent(http, router, route, commonservice, modalService) {
         this.http = http;
         this.router = router;
         this.route = route;
         this.commonservice = commonservice;
+        this.modalService = modalService;
         this.successMessage = "";
         this.errorMessage = "";
         this.postData = {};
@@ -2763,6 +2790,7 @@ var ServicecategoryComponent = /** @class */ (function () {
         this.showModal = true;
         this.display = "none";
         this.fade = "";
+        this.content = "Content";
     }
     ServicecategoryComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -2792,7 +2820,15 @@ var ServicecategoryComponent = /** @class */ (function () {
             _this.commonservice.hideloader();
         });
     };
-    ServicecategoryComponent.prototype.getCategoryData = function (services_category_id) {
+    ServicecategoryComponent.prototype.open = function () {
+        // const modalRef = this.modalService.open(NgbdModalContent);
+        // modalRef.componentInstance.name = 'World';
+        this.display = 'block';
+    };
+    ServicecategoryComponent.prototype.onCloseHandled = function () {
+        this.display = 'none';
+    };
+    ServicecategoryComponent.prototype.getCategoryData = function (services_category_id, category_name) {
         var _this = this;
         this.commonservice.showloader();
         this.postData = {
@@ -2803,11 +2839,9 @@ var ServicecategoryComponent = /** @class */ (function () {
             console.log(response);
             if (response['ERROR_CODE'] == 0) {
                 if (response['DATA'].length != 0) {
-                    _this.categorytypedata = response['DATA'];
+                    _this.category_name = category_name;
                     _this.display = 'block';
-                    _this.fade = 'in';
-                    _this.showModal = false;
-                    console.log(_this.display);
+                    _this.categorytypedata = response['DATA'];
                 }
                 else {
                     //  this.router.navigate(['/services']);
@@ -2827,9 +2861,9 @@ var ServicecategoryComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-servicecategory',
             template: __webpack_require__(/*! ./servicecategory.component.html */ "./src/app/servicecategory/servicecategory.component.html"),
-            styles: [__webpack_require__(/*! ./servicecategory.component.css */ "./src/app/servicecategory/servicecategory.component.css")]
+            styles: [__webpack_require__(/*! ./servicecategory.component.css */ "./src/app/servicecategory/servicecategory.component.css")],
         }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _common_service__WEBPACK_IMPORTED_MODULE_4__["CommonService"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _common_service__WEBPACK_IMPORTED_MODULE_4__["CommonService"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModal"]])
     ], ServicecategoryComponent);
     return ServicecategoryComponent;
 }());
